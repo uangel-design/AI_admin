@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SKT AI 고객센터 Admin</title>
+  <!-- font CSS -->
+  <link rel="stylesheet" href="../font/openSans/openSans.css">
+  <!-- datepicker CSS -->
+  <link rel="stylesheet" href="../css/flatpickr.min.css">
+  <!-- select CSS -->
+  <link rel="stylesheet" href="../css/nice-select.css">
+  <!-- scrollbar CSS -->
+  <link rel="stylesheet" href="../css/jquery.scrollbar.css">
+  <!-- common CSS -->
+  <link rel="stylesheet" href="../css/common.css">
+  <!-- jquery JS -->
+  <script src="../js/jquery-3.2.1.min.js"></script>
+  <!-- datepicker JS -->
+  <script src="../js/flatpickr.min.js"></script>
+  <script src="../js/flatpickr.minMaxTimePlugin.min.js"></script>
+  <script src="../js/ko.js"></script>
+  <!-- select JS -->
+  <script src="../js/jquery.nice-select.min.js"></script>
+  <!-- scrollbar JS -->
+  <script src="../js/jquery.scrollbar.min.js"></script>
+  <!-- common JS -->
+  <script src="../js/common.js"></script>
+</head>
+<body>
+
+<a href="#" class="btn_pop_open btn_login" onclick="view_layer('pop7')">상담사 설정</a> <!-- pop1 호출 -->
+
+<form action="">
+<!-- pop : 상담사 설정 -->
+<div class="pop_wrap" id="pop7">
+  <div class="pop_inner w_850"> <!-- 팝업너비 w_850 -->
+    <div class="pop_top">
+      <h2 class="tit">상담사 설정(조회전)</h2>
+    </div>
+
+    <div class="pop_box">
+      <div class="pop_cont">
+        <div class="box_search search_type2">
+          <fieldset>
+            <legend>상담사 설정</legend>
+
+            <div class="item_area">
+              <div class="inner">
+                <div class="item">
+                  <span class="txt">소속</span>
+                  <div class="select_area w_90">
+                    <select name="" id="" required>
+                      <option value="">전체</option>
+                      <option value="">서비스TOP</option>
+                      <option value="">서비스ACE</option>
+                    </select>
+                  </div>
+
+                  <span class="txt">센터</span>
+                  <div class="select_area w_90">
+                    <select name="" id="" required>
+                      <option value="">전체</option>
+                      <option value="">중부2센터</option>
+                      <option value="">수도권무선1센터</option>
+                    </select>
+                  </div>
+
+                  <span class="txt">상담실</span>
+                  <input type="text" class="" style="width:100px;">
+
+                  <span class="txt">사번(ID)</span>
+                  <input type="text" class="" style="width:100px;">
+                </div>
+
+                <div class="item item_type2">
+                  <span class="txt">유형</span>
+                  <label for="" class="checkbox"><input type="checkbox"><i></i><span class="txt_label">로그인 상담사</span></label>
+                  <label for="" class="checkbox"><input type="checkbox"><i></i><span class="txt_label">미배정 상담사</span></label>
+                </div>
+              </div>
+              
+              <a href="#" class="btn btn_primary">조회</a>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="box_tbl">
+          <div class="wrap_scroll">
+            <div class="scrollbar-inner scroll_pop1">
+              <table class="tbl_type1">
+                <caption>상담사 설정 목록</caption>
+                <colgroup>
+                  <col width="50">
+                  <col width="14%">
+                  <col width="14%">
+                  <col width="17%">
+                  <col width="17%">
+                  <col width="17%">
+                  <col width="">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th><span class="checkbox"><input type="checkbox" class="check_all"><i></i></span></th>
+                    <th scope="col">사번(ID)</th>
+                    <th scope="col">이름</th>
+                    <th scope="col">소속</th>
+                    <th scope="col">센터</th>
+                    <th scope="col">상담실</th>
+                    <th scope="col">배정건수</th>
+                  </tr>
+                </thead>              
+              </table>
+
+              <!-- nodata -->
+              <div class="nosearch">
+                <p class="txt">'조회' 버튼을 눌러 정보를 검색해주세요.</p>
+              </div>
+              <!-- //nodata -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="underline pop_bottom">
+
+      <div class="btn_area align_r"> <!-- 우측 정렬시 align_r -->
+        <a role="button" class="btn btn_default" onclick="close_layer('pop7');">취소</a>
+        <a role="button" class="btn btn_primary" onclick="close_layer('pop7');">상담사 추가</a>
+        <a role="button" class="btn_close" onclick="close_layer('pop7');">닫기</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //pop : 상담사 설정 -->
+</form>
+</body>
+</html>

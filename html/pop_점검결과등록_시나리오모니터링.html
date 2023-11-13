@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SKT AI 고객센터 Admin</title>
+  <!-- font CSS -->
+  <link rel="stylesheet" href="../font/openSans/openSans.css">
+  <!-- datepicker CSS -->
+  <link rel="stylesheet" href="../css/flatpickr.min.css">
+  <!-- select CSS -->
+  <link rel="stylesheet" href="../css/nice-select.css">
+  <!-- scrollbar CSS -->
+  <link rel="stylesheet" href="../css/jquery.scrollbar.css">
+  <!-- common CSS -->
+  <link rel="stylesheet" href="../css/common.css">
+  <!-- jquery JS -->
+  <script src="../js/jquery-3.2.1.min.js"></script>
+  <!-- datepicker JS -->
+  <script src="../js/flatpickr.min.js"></script>
+  <script src="../js/flatpickr.minMaxTimePlugin.min.js"></script>
+  <script src="../js/ko.js"></script>
+  <!-- select JS -->
+  <script src="../js/jquery.nice-select.min.js"></script>
+  <!-- scrollbar JS -->
+  <script src="../js/jquery.scrollbar.min.js"></script>
+  <!-- common JS -->
+  <script src="../js/common.js"></script>
+</head>
+<body>
+
+<a href="#" class="btn_pop_open btn_login" onclick="view_layer('pop1_1')">점검 결과 등록(시나리오모니터링)</a> <!-- pop1_1 호출 -->
+
+<!-- pop : 점검결과등록 -->
+<div class="pop_wrap pop_move" id="pop1_1"> <!-- 이동 팝업일때 pop_move 클래스 추가 -->
+  <div class="pop_inner w_500"> <!-- 팝업너비 w_500 -->
+    <div class="pop_top">
+      <h2 class="tit">점검 결과 등록</h2>
+      <a role="button" class="btn_close" onclick="close_layer('pop1_1');">닫기</a>
+    </div>
+
+    <div class="pop_box">
+      <div class="pop_cont">
+        <form action="">
+          <fieldset>
+            <legend>점검 결과 등록</legend>
+
+            <em class="tit">시나리오 모니터링 결과</em>
+            <div class="box_type1">
+              <span class="radio"><input type="radio" name="rdoResult"><i></i><label for="">정상</label></span>
+              <span class="radio"><input type="radio" name="rdoResult"><i></i><label for="">오류</label></span>
+              <div class="box_type2">
+                <span class="checkbox"><input type="checkbox" name=""><i></i><label for="">고객 DATA</label></span>
+                <span class="checkbox"><input type="checkbox" name=""><i></i><label for="">AI 답변(상세조건)</label></span>
+                <span class="checkbox"><input type="checkbox" name=""><i></i><label for="">상담유형</label></span>
+                <span class="checkbox"><input type="checkbox" name=""><i></i><label for="">SMS/MMS</label></span>
+                <span class="checkbox"><input type="checkbox" name=""><i></i><label for="">기타</label></span>
+              </div>
+            </div>
+
+            <div class="item">
+              <em class="tit">시나리오 오류 세부 내용</em>
+              <div class="textarea">
+                <textarea name="" id="" cols="51" rows="4"></textarea>
+              </div>
+            </div>
+
+            <hr class="underline">
+
+            <div class="item">
+              <em class="tit">STT 모니터링 결과</em>
+              <div class="box_type1">
+                <span class="radio"><input type="radio" name="rdoResult"><i></i><label for="">정상</label></span>
+                <span class="radio"><input type="radio" name="rdoResult"><i></i><label for="">오류</label></span>
+                <div class="box_type2">
+                  <span class="checkbox"><input type="checkbox" name=""><i></i><label for="">띄어쓰기</label></span>
+                  <span class="checkbox"><input type="checkbox" name=""><i></i><label for="">STT학습(오인식)</label></span>
+                  <span class="checkbox"><input type="checkbox" name=""><i></i><label for="">기타</label></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <em class="tit">STT 오류 세부 내용</em>
+              <div class="textarea">
+                <textarea name="" id="" cols="51" rows="4"></textarea>
+              </div>
+            </div>
+
+            <hr class="underline">
+
+            <div class="item">
+              <em class="tit">TTS 모니터링 결과</em>
+              <a href="#" class="btn_voice">NUGU Voice Dashboard 바로가기</a>
+              <div class="box_type1">
+                <span class="radio"><input type="radio" name="rdoResult"><i></i><label for="">정상</label></span>
+                <span class="radio"><input type="radio" name="rdoResult"><i></i><label for="">오류</label></span>
+                <div class="box_type2">
+                  <span class="checkbox"><input type="checkbox" name=""><i></i><label for="">음질</label></span>
+                  <span class="checkbox"><input type="checkbox" name=""><i></i><label for="">발음</label></span>
+                  <span class="checkbox"><input type="checkbox" name=""><i></i><label for="">띄어읽기</label></span>
+                  <span class="checkbox"><input type="checkbox" name=""><i></i><label for="">억양</label></span>
+                  <span class="checkbox"><input type="checkbox" name=""><i></i><label for="">기타</label></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <em class="tit">TTS 오류 세부 내용</em>
+              <div class="textarea">
+                <textarea name="" id="" cols="51" rows="4"></textarea>
+              </div>
+            </div>
+
+          </fieldset>
+        </form>
+      </div>
+      <div class="btn_area align_r"> <!-- 우측 정렬시 align_r -->
+        <a role="button" class="btn btn_default" onclick="close_layer('pop1_1');">취소</a>
+        <a role="button" class="btn btn_default" onclick="close_layer('pop1_1');">임시저장</a>
+        <a role="button" class="btn btn_primary" onclick="close_layer('pop1_1');">결과제출</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //pop : 점검결과등록 -->
+</body>
+</html>

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SKT AI 고객센터 Admin</title>
+  <!-- font CSS -->
+  <link rel="stylesheet" href="../font/openSans/openSans.css">
+  <!-- datepicker CSS -->
+  <link rel="stylesheet" href="../css/flatpickr.min.css">
+  <!-- select CSS -->
+  <link rel="stylesheet" href="../css/nice-select.css">
+  <!-- scrollbar CSS -->
+  <link rel="stylesheet" href="../css/jquery.scrollbar.css">
+  <!-- common CSS -->
+  <link rel="stylesheet" href="../css/common.css">
+  <!-- jquery JS -->
+  <script src="../js/jquery-3.2.1.min.js"></script>
+  <!-- datepicker JS -->
+  <script src="../js/flatpickr.min.js"></script>
+  <script src="../js/flatpickr.minMaxTimePlugin.min.js"></script>
+  <script src="../js/ko.js"></script>
+  <!-- select JS -->
+  <script src="../js/jquery.nice-select.min.js"></script>
+  <!-- scrollbar JS -->
+  <script src="../js/jquery.scrollbar.min.js"></script>
+  <!-- common JS -->
+  <script src="../js/common.js"></script>
+</head>
+<body>
+
+<a href="#" class="btn_pop_open btn_login" onclick="view_layer('pop3')">계정 정보 수정</a> <!-- pop1 호출 -->
+
+<!-- pop : 계정정보수정 -->
+<div class="pop_wrap" id="pop3">
+  <div class="pop_inner w_900"> <!-- 팝업너비 w_900 -->
+    <div class="pop_top">
+      <h2 class="tit">계정 정보 수정</h2>
+    </div>
+
+    <div class="pop_box">
+      <div class="pop_cont">
+        <form action="">
+          <fieldset>
+            <legend>계정 정보 수정</legend>
+
+            <div class="wrap_scroll">
+              <div class="scrollbar-inner scroll_pop1">
+                <table class="tbl_type1 tbl_input"> <!-- 수정 테이블 tbl_input 클래스 추가 -->
+                  <caption>계정 정보 수정</caption>
+                  <colgroup>
+                    <col width="14%">
+                    <col width="14%">
+                    <col width="17%">
+                    <col width="17%">
+                    <col width="17%">
+                    <col width="14%">
+                    <col width="">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">사번(ID)</th>
+                      <th scope="col">이름</th>
+                      <th scope="col">소속</th>
+                      <th scope="col">센터</th>
+                      <th scope="col">상담실</th>
+                      <th scope="col">권한구분</th>
+                      <th scope="col">등록일자</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><input type="text" value="A123456"></td>
+                      <td><input type="text" value="홍길동"></td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>서비스ACE</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>중부2센터</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td><input type="text" value="AI상담1실"></td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>상담사</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td><input type="text" value="2022-12-11"></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text" value="A123456"></td>
+                      <td><input type="text" value="홍길동"></td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>서비스ACE</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>중부2센터</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td><input type="text" value="AI상담1실"></td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>상담사</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td><input type="text" value="2022-12-11"></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text" value="A123456"></td>
+                      <td><input type="text" value="홍길동"></td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>서비스ACE</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>중부2센터</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td><input type="text" value="AI상담1실"></td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>상담사</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td><input type="text" value="2022-12-11"></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text" value="A123456"></td>
+                      <td><input type="text" value="홍길동"></td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>서비스ACE</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>중부2센터</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td><input type="text" value="AI상담1실"></td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>상담사</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td><input type="text" value="2022-12-11"></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text" value="A123456"></td>
+                      <td><input type="text" value="홍길동"></td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>서비스ACE</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>중부2센터</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td><input type="text" value="AI상담1실"></td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>상담사</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td><input type="text" value="2022-12-11"></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text" value="A123456"></td>
+                      <td><input type="text" value="홍길동"></td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>서비스ACE</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>중부2센터</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td><input type="text" value="AI상담1실"></td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>상담사</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td><input type="text" value="2022-12-11"></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text" value="A123456"></td>
+                      <td><input type="text" value="홍길동"></td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>서비스ACE</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>중부2센터</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td><input type="text" value="AI상담1실"></td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>상담사</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td><input type="text" value="2022-12-11"></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text" value="A123456"></td>
+                      <td><input type="text" value="홍길동"></td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>서비스ACE</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>중부2센터</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td><input type="text" value="AI상담1실"></td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>상담사</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td><input type="text" value="2022-12-11"></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text" value="A123456"></td>
+                      <td><input type="text" value="홍길동"></td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>서비스ACE</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>중부2센터</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td><input type="text" value="AI상담1실"></td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>상담사</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td><input type="text" value="2022-12-11"></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text" value="A123456"></td>
+                      <td><input type="text" value="홍길동"></td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>서비스ACE</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>중부2센터</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td><input type="text" value="AI상담1실"></td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>상담사</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td><input type="text" value="2022-12-11"></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text" value="A123456"></td>
+                      <td><input type="text" value="홍길동"></td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>서비스ACE</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>중부2센터</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td><input type="text" value="AI상담1실"></td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>상담사</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td><input type="text" value="2022-12-11"></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text" value="A123456"></td>
+                      <td><input type="text" value="홍길동"></td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>서비스ACE</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>중부2센터</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td><input type="text" value="AI상담1실"></td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>상담사</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td><input type="text" value="2022-12-11"></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text" value="A123456"></td>
+                      <td><input type="text" value="홍길동"></td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>서비스ACE</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>중부2센터</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td><input type="text" value="AI상담1실"></td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>상담사</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td><input type="text" value="2022-12-11"></td>
+                    </tr>
+                    <tr>
+                      <td><input type="text" value="A123456"></td>
+                      <td><input type="text" value="홍길동"></td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>서비스ACE</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>중부2센터</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td><input type="text" value="AI상담1실"></td>
+                      <td>
+                        <div class="select_area">
+                          <select name="" id="" required>
+                            <option value="" selected>상담사</option>
+                            <option value="">11111</option>
+                          </select>
+                        </div>
+                      </td>
+                      <td><input type="text" value="2022-12-11"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+
+      <hr class="underline pop_bottom">
+
+      <div class="btn_area align_r"> <!-- 우측 정렬시 align_r -->
+        <a role="button" class="btn btn_default" onclick="close_layer('pop3');">취소</a>
+        <a role="button" class="btn btn_primary" onclick="close_layer('pop3');">저장</a>
+        <a role="button" class="btn_close" onclick="close_layer('pop3');">닫기</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //pop : 계정신규등록 -->
+</body>
+</html>

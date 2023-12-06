@@ -165,8 +165,13 @@
           <div class="item_area">
             <div class="inner">
               <div class="item">
+                <div class="select_area mg_left w_200"> <!-- 사이즈별 클래스 제어 w_200 -->
+                  <select name="" id="" required>
+                    <option value="">모니터링 완료기간</option>
+                    <option value="">발화 인입기간</option>
+                  </select>
+                </div>
                 <div class="wrap_calendar">
-                  <span class="txt">상담 기간</span>
                   <input class="inp calendar_range"> <!-- 일달력 : calendar, 기간달력 : calendar_range -->
                   <a href="#" class="ico"></a>
                 </div>
@@ -244,12 +249,14 @@
                 <col width="">
                 <col width="">
                 <col width="">
+                <col width="">
+                <col width="">
               </colgroup>
               <thead>
                 <tr>
                   <th scope="colgroup" colspan="15">모니터링 대상</th>
                   <th scope="colgroup" colspan="6">모니터링 결과</th>
-                  <th scope="colgroup" colspan="5">모니터링 정보</th>
+                  <th scope="colgroup" colspan="7">모니터링 정보</th>
                 </tr>
                 <tr>
                   <th scope="col"><button type="button" class="btn_sort">상담일자<i class="ico"></i></button></th>
@@ -277,7 +284,9 @@
                   <th scope="col"><button type="button" class="btn_sort">모니터링<br>완료여부<i class="ico"></i></button></th>
                   <th scope="col">모니터링<br>상담사 ID</th>
                   <th scope="col"><button type="button" class="btn_sort">모니터링<br>완료 일자<i class="ico"></i></button></th>
+                  <th scope="col">모니터링<br>시작시간</th>
                   <th scope="col">모니터링<br>완료시간</th>
+                  <th scope="col">모니터링<br>점검시간</th>
                 </tr>
               </thead>
               <tbody>
@@ -308,33 +317,7 @@
                   <td>1110610</td>
                   <td>2023-08-12</td>
                   <td>13:10:59</td>
-                </tr>
-                <tr>
-                  <td>2023-08-01</td>
-                  <td>11:00:00</td>
-                  <td>11:00:00</td>
-                  <td>11:00:00</td>
-                  <td>1234567890</td>
-                  <td>12a33b44c</td>
-                  <td>12a33b44c</td>
-                  <td>버튼식 ARS</td>
-                  <td>Y</td>
-                  <td>저장</td>
-                  <td></td>
-                  <td>T3</td>
-                  <td>N</td>
-                  <td><a href="#" class="btn_pop_open btn_item txt_msg ellipsis2" onclick="view_layer('pop4_1')">상담사 대화내용 대화내용 상담사 대화내용 대화내용</a></td>
-                  <td></td>
-                  <td>오류:고객DATA</td>
-                  <td><a href="#" class="btn_pop_open btn_item txt_msg ellipsis2" onclick="view_layer('pop1_2')">오류 원인 확인 확인 확인</a></td>
-                  <td>오류:STT학습<br>(오인식)</td>
-                  <td><a href="#" class="btn_pop_open btn_item txt_msg ellipsis2" onclick="view_layer('pop1_2')">오류 원인 확인 확인 확인</a></td>
-                  <td>오류:음질</td>
-                  <td><a href="#" class="btn_pop_open btn_item txt_msg ellipsis2" onclick="view_layer('pop1_2')">오류 원인 확인 확인 확인</a></td>
-                  <td>Y</td>
-                  <td>Y</td>
-                  <td>1110610</td>
-                  <td>2023-08-12</td>
+                  <td>13:10:59</td>
                   <td>13:10:59</td>
                 </tr>
                 <tr>
@@ -364,33 +347,7 @@
                   <td>1110610</td>
                   <td>2023-08-12</td>
                   <td>13:10:59</td>
-                </tr>
-                <tr>
-                  <td>2023-08-01</td>
-                  <td>11:00:00</td>
-                  <td>11:00:00</td>
-                  <td>11:00:00</td>
-                  <td>1234567890</td>
-                  <td>12a33b44c</td>
-                  <td>12a33b44c</td>
-                  <td>버튼식 ARS</td>
-                  <td>Y</td>
-                  <td>저장</td>
-                  <td></td>
-                  <td>T3</td>
-                  <td>N</td>
-                  <td><a href="#" class="btn_pop_open btn_item txt_msg ellipsis2" onclick="view_layer('pop4_1')">상담사 대화내용 대화내용 상담사 대화내용 대화내용</a></td>
-                  <td></td>
-                  <td>오류:고객DATA</td>
-                  <td><a href="#" class="btn_pop_open btn_item txt_msg ellipsis2" onclick="view_layer('pop1_2')">오류 원인 확인 확인 확인</a></td>
-                  <td>오류:STT학습<br>(오인식)</td>
-                  <td><a href="#" class="btn_pop_open btn_item txt_msg ellipsis2" onclick="view_layer('pop1_2')">오류 원인 확인 확인 확인</a></td>
-                  <td>오류:음질</td>
-                  <td><a href="#" class="btn_pop_open btn_item txt_msg ellipsis2" onclick="view_layer('pop1_2')">오류 원인 확인 확인 확인</a></td>
-                  <td>Y</td>
-                  <td>Y</td>
-                  <td>1110610</td>
-                  <td>2023-08-12</td>
+                  <td>13:10:59</td>
                   <td>13:10:59</td>
                 </tr>
                 <tr>
@@ -420,33 +377,7 @@
                   <td>1110610</td>
                   <td>2023-08-12</td>
                   <td>13:10:59</td>
-                </tr>
-                <tr>
-                  <td>2023-08-01</td>
-                  <td>11:00:00</td>
-                  <td>11:00:00</td>
-                  <td>11:00:00</td>
-                  <td>1234567890</td>
-                  <td>12a33b44c</td>
-                  <td>12a33b44c</td>
-                  <td>버튼식 ARS</td>
-                  <td>Y</td>
-                  <td>저장</td>
-                  <td></td>
-                  <td>T3</td>
-                  <td>N</td>
-                  <td><a href="#" class="btn_pop_open btn_item txt_msg ellipsis2" onclick="view_layer('pop4_1')">상담사 대화내용 대화내용 상담사 대화내용 대화내용</a></td>
-                  <td></td>
-                  <td>오류:고객DATA</td>
-                  <td><a href="#" class="btn_pop_open btn_item txt_msg ellipsis2" onclick="view_layer('pop1_2')">오류 원인 확인 확인 확인</a></td>
-                  <td>오류:STT학습<br>(오인식)</td>
-                  <td><a href="#" class="btn_pop_open btn_item txt_msg ellipsis2" onclick="view_layer('pop1_2')">오류 원인 확인 확인 확인</a></td>
-                  <td>오류:음질</td>
-                  <td><a href="#" class="btn_pop_open btn_item txt_msg ellipsis2" onclick="view_layer('pop1_2')">오류 원인 확인 확인 확인</a></td>
-                  <td>Y</td>
-                  <td>Y</td>
-                  <td>1110610</td>
-                  <td>2023-08-12</td>
+                  <td>13:10:59</td>
                   <td>13:10:59</td>
                 </tr>
                 <tr>
@@ -476,33 +407,7 @@
                   <td>1110610</td>
                   <td>2023-08-12</td>
                   <td>13:10:59</td>
-                </tr>
-                <tr>
-                  <td>2023-08-01</td>
-                  <td>11:00:00</td>
-                  <td>11:00:00</td>
-                  <td>11:00:00</td>
-                  <td>1234567890</td>
-                  <td>12a33b44c</td>
-                  <td>12a33b44c</td>
-                  <td>버튼식 ARS</td>
-                  <td>Y</td>
-                  <td>저장</td>
-                  <td></td>
-                  <td>T3</td>
-                  <td>N</td>
-                  <td><a href="#" class="btn_pop_open btn_item txt_msg ellipsis2" onclick="view_layer('pop4_1')">상담사 대화내용 대화내용 상담사 대화내용 대화내용</a></td>
-                  <td></td>
-                  <td>오류:고객DATA</td>
-                  <td><a href="#" class="btn_pop_open btn_item txt_msg ellipsis2" onclick="view_layer('pop1_2')">오류 원인 확인 확인 확인</a></td>
-                  <td>오류:STT학습<br>(오인식)</td>
-                  <td><a href="#" class="btn_pop_open btn_item txt_msg ellipsis2" onclick="view_layer('pop1_2')">오류 원인 확인 확인 확인</a></td>
-                  <td>오류:음질</td>
-                  <td><a href="#" class="btn_pop_open btn_item txt_msg ellipsis2" onclick="view_layer('pop1_2')">오류 원인 확인 확인 확인</a></td>
-                  <td>Y</td>
-                  <td>Y</td>
-                  <td>1110610</td>
-                  <td>2023-08-12</td>
+                  <td>13:10:59</td>
                   <td>13:10:59</td>
                 </tr>
                 <tr>
@@ -532,6 +437,8 @@
                   <td>1110610</td>
                   <td>2023-08-12</td>
                   <td>13:10:59</td>
+                  <td>13:10:59</td>
+                  <td>13:10:59</td>
                 </tr>
                 <tr>
                   <td>2023-08-01</td>
@@ -559,6 +466,128 @@
                   <td>Y</td>
                   <td>1110610</td>
                   <td>2023-08-12</td>
+                  <td>13:10:59</td>
+                  <td>13:10:59</td>
+                  <td>13:10:59</td>
+                </tr>
+                <tr>
+                  <td>2023-08-01</td>
+                  <td>11:00:00</td>
+                  <td>11:00:00</td>
+                  <td>11:00:00</td>
+                  <td>1234567890</td>
+                  <td>12a33b44c</td>
+                  <td>12a33b44c</td>
+                  <td>버튼식 ARS</td>
+                  <td>Y</td>
+                  <td>저장</td>
+                  <td></td>
+                  <td>T3</td>
+                  <td>N</td>
+                  <td><a href="#" class="btn_pop_open btn_item txt_msg ellipsis2" onclick="view_layer('pop4_1')">상담사 대화내용 대화내용 상담사 대화내용 대화내용</a></td>
+                  <td></td>
+                  <td>오류:고객DATA</td>
+                  <td><a href="#" class="btn_pop_open btn_item txt_msg ellipsis2" onclick="view_layer('pop1_2')">오류 원인 확인 확인 확인</a></td>
+                  <td>오류:STT학습<br>(오인식)</td>
+                  <td><a href="#" class="btn_pop_open btn_item txt_msg ellipsis2" onclick="view_layer('pop1_2')">오류 원인 확인 확인 확인</a></td>
+                  <td>오류:음질</td>
+                  <td><a href="#" class="btn_pop_open btn_item txt_msg ellipsis2" onclick="view_layer('pop1_2')">오류 원인 확인 확인 확인</a></td>
+                  <td>Y</td>
+                  <td>Y</td>
+                  <td>1110610</td>
+                  <td>2023-08-12</td>
+                  <td>13:10:59</td>
+                  <td>13:10:59</td>
+                  <td>13:10:59</td>
+                </tr>
+                <tr>
+                  <td>2023-08-01</td>
+                  <td>11:00:00</td>
+                  <td>11:00:00</td>
+                  <td>11:00:00</td>
+                  <td>1234567890</td>
+                  <td>12a33b44c</td>
+                  <td>12a33b44c</td>
+                  <td>버튼식 ARS</td>
+                  <td>Y</td>
+                  <td>저장</td>
+                  <td></td>
+                  <td>T3</td>
+                  <td>N</td>
+                  <td><a href="#" class="btn_pop_open btn_item txt_msg ellipsis2" onclick="view_layer('pop4_1')">상담사 대화내용 대화내용 상담사 대화내용 대화내용</a></td>
+                  <td></td>
+                  <td>오류:고객DATA</td>
+                  <td><a href="#" class="btn_pop_open btn_item txt_msg ellipsis2" onclick="view_layer('pop1_2')">오류 원인 확인 확인 확인</a></td>
+                  <td>오류:STT학습<br>(오인식)</td>
+                  <td><a href="#" class="btn_pop_open btn_item txt_msg ellipsis2" onclick="view_layer('pop1_2')">오류 원인 확인 확인 확인</a></td>
+                  <td>오류:음질</td>
+                  <td><a href="#" class="btn_pop_open btn_item txt_msg ellipsis2" onclick="view_layer('pop1_2')">오류 원인 확인 확인 확인</a></td>
+                  <td>Y</td>
+                  <td>Y</td>
+                  <td>1110610</td>
+                  <td>2023-08-12</td>
+                  <td>13:10:59</td>
+                  <td>13:10:59</td>
+                  <td>13:10:59</td>
+                </tr>
+                <tr>
+                  <td>2023-08-01</td>
+                  <td>11:00:00</td>
+                  <td>11:00:00</td>
+                  <td>11:00:00</td>
+                  <td>1234567890</td>
+                  <td>12a33b44c</td>
+                  <td>12a33b44c</td>
+                  <td>버튼식 ARS</td>
+                  <td>Y</td>
+                  <td>저장</td>
+                  <td></td>
+                  <td>T3</td>
+                  <td>N</td>
+                  <td><a href="#" class="btn_pop_open btn_item txt_msg ellipsis2" onclick="view_layer('pop4_1')">상담사 대화내용 대화내용 상담사 대화내용 대화내용</a></td>
+                  <td></td>
+                  <td>오류:고객DATA</td>
+                  <td><a href="#" class="btn_pop_open btn_item txt_msg ellipsis2" onclick="view_layer('pop1_2')">오류 원인 확인 확인 확인</a></td>
+                  <td>오류:STT학습<br>(오인식)</td>
+                  <td><a href="#" class="btn_pop_open btn_item txt_msg ellipsis2" onclick="view_layer('pop1_2')">오류 원인 확인 확인 확인</a></td>
+                  <td>오류:음질</td>
+                  <td><a href="#" class="btn_pop_open btn_item txt_msg ellipsis2" onclick="view_layer('pop1_2')">오류 원인 확인 확인 확인</a></td>
+                  <td>Y</td>
+                  <td>Y</td>
+                  <td>1110610</td>
+                  <td>2023-08-12</td>
+                  <td>13:10:59</td>
+                  <td>13:10:59</td>
+                  <td>13:10:59</td>
+                </tr>
+                <tr>
+                  <td>2023-08-01</td>
+                  <td>11:00:00</td>
+                  <td>11:00:00</td>
+                  <td>11:00:00</td>
+                  <td>1234567890</td>
+                  <td>12a33b44c</td>
+                  <td>12a33b44c</td>
+                  <td>버튼식 ARS</td>
+                  <td>Y</td>
+                  <td>저장</td>
+                  <td></td>
+                  <td>T3</td>
+                  <td>N</td>
+                  <td><a href="#" class="btn_pop_open btn_item txt_msg ellipsis2" onclick="view_layer('pop4_1')">상담사 대화내용 대화내용 상담사 대화내용 대화내용</a></td>
+                  <td></td>
+                  <td>오류:고객DATA</td>
+                  <td><a href="#" class="btn_pop_open btn_item txt_msg ellipsis2" onclick="view_layer('pop1_2')">오류 원인 확인 확인 확인</a></td>
+                  <td>오류:STT학습<br>(오인식)</td>
+                  <td><a href="#" class="btn_pop_open btn_item txt_msg ellipsis2" onclick="view_layer('pop1_2')">오류 원인 확인 확인 확인</a></td>
+                  <td>오류:음질</td>
+                  <td><a href="#" class="btn_pop_open btn_item txt_msg ellipsis2" onclick="view_layer('pop1_2')">오류 원인 확인 확인 확인</a></td>
+                  <td>Y</td>
+                  <td>Y</td>
+                  <td>1110610</td>
+                  <td>2023-08-12</td>
+                  <td>13:10:59</td>
+                  <td>13:10:59</td>
                   <td>13:10:59</td>
                 </tr>
               </tbody>

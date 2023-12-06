@@ -165,8 +165,13 @@
           <div class="item_area">
             <div class="inner">
               <div class="item">
+                <div class="select_area mg_left w_200"> <!-- 사이즈별 클래스 제어 w_200 -->
+                  <select name="" id="" required>
+                    <option value="">모니터링 완료기간</option>
+                    <option value="">발화 인입기간</option>
+                  </select>
+                </div>
                 <div class="wrap_calendar">
-                  <span class="txt">발화인입 기간</span>
                   <input class="inp calendar_range"> <!-- 일달력 : calendar, 기간달력 : calendar_range -->
                   <a href="#" class="ico"></a>
                 </div>
@@ -183,10 +188,10 @@
 
               <div class="item">
                 <span class="txt">NLU Intent(현재)</span>
-                <input type="text" class="" style="width:192px;">
+                <input type="text" class="" style="width:254px;">
 
                 <span class="txt">NLU Intent(수정)</span>
-                <input type="text" class="" style="width:192px;">
+                <input type="text" class="" style="width:254px;">
               </div>
             </div>
 
@@ -216,12 +221,14 @@
                 <col width="">
                 <col width="">
                 <col width="">
+                <col width="">
+                <col width="">
               </colgroup>
               <thead>
                 <tr>
                   <th scope="colgroup" colspan="4">모니터링 대상</th>
                   <th scope="colgroup" colspan="4">모니터링 결과</th>
-                  <th scope="colgroup" colspan="5">모니터링 정보</th>
+                  <th scope="colgroup" colspan="7">모니터링 정보</th>
                 </tr>
                 <tr>
                   <th scope="col"><button type="button" class="btn_sort">발화인입<br>일자<i class="ico"></i></button></th>
@@ -235,8 +242,10 @@
                   <th scope="col"><button type="button" class="btn_sort">모니터링<br>배정여부<i class="ico"></i></button></th>
                   <th scope="col"><button type="button" class="btn_sort">모니터링<br>완료여부<i class="ico"></i></button></th>
                   <th scope="col">모니터링<br>상담사ID</th>
-                  <th scope="col">모니터링<br>완료일자</th>
+                  <th scope="col"><button type="button" class="btn_sort">모니터링<br>완료일자<i class="ico"></i></button></th>
+                  <th scope="col">모니터링<br>시작시간</th>
                   <th scope="col">모니터링<br>완료시간</th>
+                  <th scope="col">모니터링<br>점검시간</th>
                 </tr>
               </thead>
               <tbody>
@@ -254,20 +263,7 @@
                   <td>1110610</td>
                   <td>2023-08-12</td>
                   <td>13:10:59</td>
-                </tr>
-                <tr>
-                  <td>2023-08-01</td>
-                  <td>11:00:00</td>
-                  <td>요번 달에 낼 돈</td>
-                  <td>OOD</td>
-                  <td>오류</td>
-                  <td>amount_this_month</td>
-                  <td><a href="#" class="btn_pop_open txt_link" onclick="view_layer('pop1_3')">요번 달에 낼 요금</a></td>
-                  <td><a href="#" class="btn_pop_open txt_link" onclick="view_layer('pop1_3')">특이사항 없음</a></td>
-                  <td>Y</td>
-                  <td>Y</td>
-                  <td>1110610</td>
-                  <td>2023-08-12</td>
+                  <td>13:10:59</td>
                   <td>13:10:59</td>
                 </tr>
                 <tr>
@@ -284,20 +280,7 @@
                   <td>1110610</td>
                   <td>2023-08-12</td>
                   <td>13:10:59</td>
-                </tr>
-                <tr>
-                  <td>2023-08-01</td>
-                  <td>11:00:00</td>
-                  <td>요번 달에 낼 돈</td>
-                  <td>OOD</td>
-                  <td>오류</td>
-                  <td>amount_this_month</td>
-                  <td><a href="#" class="btn_pop_open txt_link" onclick="view_layer('pop1_3')">요번 달에 낼 요금</a></td>
-                  <td><a href="#" class="btn_pop_open txt_link" onclick="view_layer('pop1_3')">특이사항 없음</a></td>
-                  <td>Y</td>
-                  <td>Y</td>
-                  <td>1110610</td>
-                  <td>2023-08-12</td>
+                  <td>13:10:59</td>
                   <td>13:10:59</td>
                 </tr>
                 <tr>
@@ -313,6 +296,42 @@
                   <td>Y</td>
                   <td>1110610</td>
                   <td>2023-08-12</td>
+                  <td>13:10:59</td>
+                  <td>13:10:59</td>
+                  <td>13:10:59</td>
+                </tr>
+                <tr>
+                  <td>2023-08-01</td>
+                  <td>11:00:00</td>
+                  <td>요번 달에 낼 돈</td>
+                  <td>OOD</td>
+                  <td>오류</td>
+                  <td>amount_this_month</td>
+                  <td><a href="#" class="btn_pop_open txt_link" onclick="view_layer('pop1_3')">요번 달에 낼 요금</a></td>
+                  <td><a href="#" class="btn_pop_open txt_link" onclick="view_layer('pop1_3')">특이사항 없음</a></td>
+                  <td>Y</td>
+                  <td>Y</td>
+                  <td>1110610</td>
+                  <td>2023-08-12</td>
+                  <td>13:10:59</td>
+                  <td>13:10:59</td>
+                  <td>13:10:59</td>
+                </tr>
+                <tr>
+                  <td>2023-08-01</td>
+                  <td>11:00:00</td>
+                  <td>요번 달에 낼 돈</td>
+                  <td>OOD</td>
+                  <td>오류</td>
+                  <td>amount_this_month</td>
+                  <td><a href="#" class="btn_pop_open txt_link" onclick="view_layer('pop1_3')">요번 달에 낼 요금</a></td>
+                  <td><a href="#" class="btn_pop_open txt_link" onclick="view_layer('pop1_3')">특이사항 없음</a></td>
+                  <td>Y</td>
+                  <td>Y</td>
+                  <td>1110610</td>
+                  <td>2023-08-12</td>
+                  <td>13:10:59</td>
+                  <td>13:10:59</td>
                   <td>13:10:59</td>
                 </tr>
                 <tr>
@@ -329,20 +348,7 @@
                   <td>1110610</td>
                   <td>2023-08-12</td>
                   <td>13:10:59</td>
-                </tr>
-                <tr>
-                  <td>2023-08-01</td>
-                  <td>11:00:00</td>
-                  <td>요번 달에 낼 돈</td>
-                  <td>OOD</td>
-                  <td>오류</td>
-                  <td>amount_this_month</td>
-                  <td><a href="#" class="btn_pop_open txt_link" onclick="view_layer('pop1_3')">요번 달에 낼 요금</a></td>
-                  <td><a href="#" class="btn_pop_open txt_link" onclick="view_layer('pop1_3')">특이사항 없음</a></td>
-                  <td>Y</td>
-                  <td>Y</td>
-                  <td>1110610</td>
-                  <td>2023-08-12</td>
+                  <td>13:10:59</td>
                   <td>13:10:59</td>
                 </tr>
                 <tr>
@@ -359,20 +365,7 @@
                   <td>1110610</td>
                   <td>2023-08-12</td>
                   <td>13:10:59</td>
-                </tr>
-                <tr>
-                  <td>2023-08-01</td>
-                  <td>11:00:00</td>
-                  <td>요번 달에 낼 돈</td>
-                  <td>OOD</td>
-                  <td>오류</td>
-                  <td>amount_this_month</td>
-                  <td><a href="#" class="btn_pop_open txt_link" onclick="view_layer('pop1_3')">요번 달에 낼 요금</a></td>
-                  <td><a href="#" class="btn_pop_open txt_link" onclick="view_layer('pop1_3')">특이사항 없음</a></td>
-                  <td>Y</td>
-                  <td>Y</td>
-                  <td>1110610</td>
-                  <td>2023-08-12</td>
+                  <td>13:10:59</td>
                   <td>13:10:59</td>
                 </tr>
                 <tr>
@@ -388,6 +381,42 @@
                   <td>Y</td>
                   <td>1110610</td>
                   <td>2023-08-12</td>
+                  <td>13:10:59</td>
+                  <td>13:10:59</td>
+                  <td>13:10:59</td>
+                </tr>
+                <tr>
+                  <td>2023-08-01</td>
+                  <td>11:00:00</td>
+                  <td>요번 달에 낼 돈</td>
+                  <td>OOD</td>
+                  <td>오류</td>
+                  <td>amount_this_month</td>
+                  <td><a href="#" class="btn_pop_open txt_link" onclick="view_layer('pop1_3')">요번 달에 낼 요금</a></td>
+                  <td><a href="#" class="btn_pop_open txt_link" onclick="view_layer('pop1_3')">특이사항 없음</a></td>
+                  <td>Y</td>
+                  <td>Y</td>
+                  <td>1110610</td>
+                  <td>2023-08-12</td>
+                  <td>13:10:59</td>
+                  <td>13:10:59</td>
+                  <td>13:10:59</td>
+                </tr>
+                <tr>
+                  <td>2023-08-01</td>
+                  <td>11:00:00</td>
+                  <td>요번 달에 낼 돈</td>
+                  <td>OOD</td>
+                  <td>오류</td>
+                  <td>amount_this_month</td>
+                  <td><a href="#" class="btn_pop_open txt_link" onclick="view_layer('pop1_3')">요번 달에 낼 요금</a></td>
+                  <td><a href="#" class="btn_pop_open txt_link" onclick="view_layer('pop1_3')">특이사항 없음</a></td>
+                  <td>Y</td>
+                  <td>Y</td>
+                  <td>1110610</td>
+                  <td>2023-08-12</td>
+                  <td>13:10:59</td>
+                  <td>13:10:59</td>
                   <td>13:10:59</td>
                 </tr>
               </tbody>

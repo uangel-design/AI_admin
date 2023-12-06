@@ -172,18 +172,23 @@
             <div class="item_area">
               <div class="inner">
                 <div class="item">
-                  <span class="txt">상담 기간</span>
+                  <div class="select_area mg_left w_200"> <!-- 사이즈별 클래스 제어 w_200 -->
+                    <select name="" id="" required>
+                      <option value="">모니터링 완료기간</option>
+                      <option value="">발화 인입기간</option>
+                    </select>
+                  </div>
                   <div class="wrap_calendar">
                     <input class="inp calendar_range"> <!-- 일달력 : calendar, 기간달력 : calendar_range -->
                     <a href="#" class="ico"></a>
                   </div>
 
                   <span class="txt">서비스 관리 번호</span>
-                  <input type="text" class="" style="width:410px;">
+                  <input type="text" class="" style="width:310px;">
                 </div>
 
                 <div class="item">
-                  <span class="txt">최종 업무처리 결과</span>
+                  <span class="txt">대표 업무처리 결과</span>
                   <div class="select_area w_200">
                     <select name="" id="" required>
                       <option value="">전체</option>
@@ -207,7 +212,7 @@
                     </select>
                   </div>
 
-                  <span class="txt">상담사 ID</span>
+                  <span class="txt">모니터링 상담사 ID</span>
                   <input type="text" class="" style="width:200px;">
                 </div>
 
@@ -264,6 +269,8 @@
                   <col width="">
                   <col width="">
                   <col width="">
+                  <col width="">
+                  <col width="">
                 </colgroup>
                 <thead>
                   <tr>
@@ -285,7 +292,9 @@
                     <th scope="col">모니터링<br>완료여부</th>
                     <th scope="col">모니터링<br>상담사 ID</th>
                     <th scope="col"><button type="button" class="btn_sort">모니터링<br>완료 일자<i class="ico"></i></button></th>
+                    <th scope="col">모니터링<br>시작시간</th>
                     <th scope="col">모니터링<br>완료시간</th>
+                    <th scope="col">모니터링<br>점검시간</th>
                   </tr>
                 </thead>
               </table>

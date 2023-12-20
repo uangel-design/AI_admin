@@ -69,6 +69,8 @@ input::placeholder {color:rgba(0, 0, 0, 0.27) !important;}
 .btn_del_c:after {content:'\2212';clear:both;display:inline-block;}
 .btn_area {margin-bottom:10px;}
 .btn_wide {min-width:77px;padding:0 17px;text-align:center;}
+.btn_type2 {display:inline-block;width:181px;vertical-align:middle;}
+.btn_type2 .btn_grey {display:block;min-width:172px !important;margin-bottom:10px;}
 /* sort button */
 .btn_sort {position:relative;}
 .btn_sort .ico {position:absolute;right:0;top:50%;margin-top:-6px;display:inline-block;width:4px;height:12px;}
